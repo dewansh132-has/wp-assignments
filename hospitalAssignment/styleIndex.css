@@ -1,0 +1,26 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0); 
+}
+
+.navbar ul {
+    display: flex; /* keeps the elements in the navbar side by side */
+    justify-content: center;
+    list-style-type: none; /* removes the bullets */
+}
+
+.navbar li {
+    margin: 20px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: rgb(248, 242, 130);
+}

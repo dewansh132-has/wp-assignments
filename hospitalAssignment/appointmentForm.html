@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="styleAppointmentform.css">
+</head>
+<body align="center">
+    
+    <form action="action.php" method="post">
+        <table class="form1">
+        
+            <!-- Section 1: Personal Details -->
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend><h2 class="one">Personal Details</h2></legend>
+                    
+                    Full Name: <input type="text" name="Full_Name" placeholder="Full Name" required><br><br>
+        
+                    Gender:
+                    <label><input type="radio" value="Male" name="Gender"> Male</label>
+                    <label><input type="radio" value="Female" name="Gender"> Female</label><br><br>
+        
+                    Date of Birth: <input type="date" name="Date_of_Birth" required><br><br>
+                    Age: <input type="number" name="age"><br><br>
+                    Email: <input type="email" name="email" required><br><br>
+                    Contact: <input type="number" name="contact"><pre> (Contact Number must be 10 digits)</pre>
+                    Upload ID proof: <input type="file" name="fileupload" required></fieldset><br>
+                </td>
+            </tr>
+        
+            <!-- Section 2: Address & Emergency -->
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend><h2 class="one">Address & Emergency Contact</h2></legend>
+                    Address Line 1: <input type="text" name="addressLine1"><br><br>
+                    Address Line 2: <input type="text" name="addressLine2"><br><br>
+                    City: <input type="text" name="city"><br><br>
+                    State: <input type="text" name="state"><br><br>
+                    Country: <input type="text" name="country"><br><br>
+                    Pincode: <input type="password" name="pincode"><br><br>
+        
+                    Emergency Contact Person Name:
+                    <input type="text" name="emergencyContactPersonName"><br><br>
+        
+                    Emergency Contact Number:
+                    <input type="number" name="emergencyContactNumber"> <pre> (Contact Number must be 10 digits)</pre>
+        
+                    Relationship:
+                    <select name="relationship">
+                        <option value="Parent">Parent</option>
+                        <option value="Spouse">Spouse</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Other">Other</option>
+                    </select></fieldset><br>
+                </td>
+            </tr>
+        
+            <!-- Section 3: Medical History -->
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend><h2 class="one">Medical History</h2></legend>
+                    <label><input type="checkbox" name="Diabetes"> Diabetes</label><br>
+                    <label><input type="checkbox" name="Hypertension"> Hypertension</label><br>
+                    <label><input type="checkbox" name="Ashthma"> Ashthma</label><br>
+                    <label><input type="checkbox" name="Allergies"> Allergies</label><br>
+                    <label><input type="checkbox" name="heartDiseases"> Heart Disease</label><br><br>
+        
+                    Blood Group:
+                    <select name="BloodGroup">
+                        <option value="O+" selected>O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="B-">B-</option>
+                    </select><br><br>
+        
+                    Ongoing Medications:<br>
+                    <textarea name="ongoingMedications" cols="30" rows="4"></textarea><br><br>
+        
+                    Previous Surgeries:<br>
+                    <textarea name="previousSurgeries" cols="30" rows="4"></textarea><br><br>
+        
+                    Do you smoke?
+                    <label><input type="radio" name="doYouSmoke" value="Yes"> Yes</label>
+                    <label><input type="radio" name="doYouSmoke" value="No"> No</label><br><br>
+        
+                    Alcohol pite ho?
+                    <label><input type="radio" name="alcohol" value="Yes"> Yes</label>
+                    <label><input type="radio" name="alcohol" value="No"> No</label></fieldset><br>
+                </td>
+            </tr>
+        
+            <!-- Section 4: Appointment -->
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend><h2 class="one">Appointment Details</h2></legend>
+                    Department Required:
+                    <select name="departmentRequired">
+                        <option value="Cardiology" selected>Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                    </select><br><br>
+        
+                    Preferred Doctor:
+                    <select name="preferredDoctor">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select><br><br>
+        
+                    Appointment Date:
+                    <input type="date" name="appointmentDate" required><br><br>
+        
+                    Appointment Time:
+                    <input type="time" name="appointmentTime" required><br><br>
+        
+                    Mode of Consultation:
+                    <select name="modeOfConsultation">
+                        <option value="In-Person">In-Person</option>
+                        <option value="Online Video Call">Online Video Call</option>
+                    </select><br><br>
+        
+                    Describe Your Symptoms:<br>
+                    <textarea name="symptoms" cols="30" rows="4" minlength="10"></textarea></fieldset><br>
+                </td>
+            </tr>
+        
+            <!-- Section 5: Payment & Acknowledgement -->
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend><h2 class="one">Payment & Acknowledgement</h2></legend>
+        
+                    Do you have Health insurance?
+                    <label><input type="radio" name="healthInsurance" value="Yes">Yes</label>
+                    <label><input type="radio" name="healthInsurance" value="No"> No</label><br><br>
+        
+                    Payment method:
+                    <select name="paymentMethod">
+                        <option value="UPI">UPI</option>
+                        <option value="Net Banking">Net Banking</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Cash at Hospital">Cash at Hospital</option>
+                    </select><br><br>
+        
+                    <label><input type="checkbox" required>
+                        I confirm that the information provided is accurate
+                    </label><br>
+        
+                    <label><input type="checkbox" required>
+                        I agree to hospital privacy & data policies.
+                    </label><br><br>
+                    
+                    <input type="reset" value="Reset" class="buttons"><br><br>
+                    <input type="submit" value="Submit" class="buttons"></fieldset><br>
+                    
+                </td>
+            </tr>
+        
+        </table>
+        </form>
+        
+</body>
+</html>

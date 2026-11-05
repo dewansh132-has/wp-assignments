@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="typewriter">Welcome to NIT Warangal...</div>
+    <div>
+      <ul>
+        <li><a href="https://www.facebook.com/NITWarangalOfficial/"><img src="fb.webp" height="25px"></a></li>
+        <li><a href="https://x.com/warangal_nit"><img src="x.png" height="25px"></a></li>
+        <li><a href="https://www.youtube.com/@nitwarangalofical"><img src="channels4_profile.jpg" height="25px"></a>
+        </li>
+        <li><a href="https://www.instagram.com/nitwarangalofficial/"><img src="ig.png" height="25px"></a></li>
+        <li><input type="reset" id="one"></li>
+      </ul>
+    </div>
+  </div>
+  <!-- NITW logo & name -->
+  <div class="nitLogo">
+    <img src="https://www.nitw.ac.in/images/NITW_logo_telugu3.png">
+  </div>
+  <!-- navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>Institute</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">About Us</a>
+            <a href="#">Vison & Mission</a>
+            <a href="#">Key Documents</a>
+            <a href="#">Institute Facilities</a>
+            <a href="#">Visiting NITW</a>
+            <a href="#">Institute Seminars</a>
+            <a href="#">Giving Back</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>Administration</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Chairperson</a>
+            <a href="#">Director</a>
+            <a href="#">Deans</a>
+            <a href="#">Registrar</a>
+            <a href="#">Heads</a>
+            <a href="#">Professor In-charge</a>
+            <a href="#">CVO</a>
+            <a href="#">Officers</a>
+            <a href="#">Committees</a>
+            <a href="#">BWC/FC/BoG</a>
+            <a href="#">Statutoru Policies</a>
+            <a href="#">Hindi Cell</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>Academics</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Academic Calender</a>
+            <a href="#">Academic Forms</a>
+            <a href="#">Academic Programs</a>
+            <a href="#">Academic Regulations</a>
+            <a href="#">Academic Services</a>
+            <a href="#">Services</a>
+            <a href="#">Admissions</a>
+            <a href="#">Central Library</a>
+            <a href="#">Departments</a>
+            <a href="#">Examination Section</a>
+            <a href="#">Timetables</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>R&D</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">SRIC Cell</a>
+            <a href="#">Research Centers & Facilities</a>
+            <a href="#">Startups</a>
+            <a href="#">Patent</a>
+            <a href="#">MoU</a>
+            <a href="#">International Relations</a>
+            <a href="#">R&D Committee</a>
+            <a href="#">E & ICT</a>
+            <a href="#">I-STEM</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>Students</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Students Welfare</a>
+            <a href="#">Hall of Residence</a>
+            <a href="#">Anti Ragging</a>
+            <a href="#">Student Disciplinary Manual</a>
+            <a href="#">Students Counselling Services</a>
+            <a href="#">Center for Mental Health & Wellness</a>
+            <a href="#">Students' Grievance Rdressal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <h3>Alumini</h3>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Center for Alumini Relations</a>
+            <a href="#">Giving Back</a>
+            <a href="#">Alumini Connect</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="https://www.g20.org/en/"><img src="https://nitw.ac.in/api/static/files/g_20_2025-6-17-18-46-34.png"
+            height="70px"></a></li>
+      <li><a href="https://amritmahotsav.nic.in/"><img
+            src="https://nitw.ac.in/api/static/files/ams75_2025-6-17-18-47-10.png" height="70px"></a></li>
+    </ul>
+  </nav>
+
+  <!-- images -->
+  <div class="mySlides">
+    <img class="slides" src="main_building_2025-2-24-12-53-30.jpg" width="100%">
+    <img class="slides" src="admin_image_2022-7-13-23-32-52.jpg" width="100%">
+    <img class="slides" src="campus_view_2022-7-13-22-11-7.jpeg" width="100%">
+    <img class="slides" src="NIT_WARANGAL_v1_2023-4-1-11-24-46.jpg" width="100%">
+    <img class="slides" src="NITWian_Best_Practices_Campaign_2024-2-15-17-59-45.jpg" width="100%">
+  </div>
+  <!-- js code for images -->
+  <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2500); //changes image every 2.5 seconds
+    }
+  </script>
+
+  <!-- text sliding -->
+  <div class="main">
+    <marquee class="marq" direction="left" loop="">
+      <h4>Mutual fund investments are subject to market risks, read all scheme related documents carefully.....
+      </h4>
+    </marquee>
+  </div>
+
+  <!-- director's msg -->
+  <section class="director-section">
+
+
+    <div class="layout">
+      <!-- left -->
+      <div class="left">
+        <h2 class="title" align="left">Director's Message</h2>
+        <img src="Director_image1_2023-5-20-12-32-22.jpg" class="director-img">
+
+        <p>
+          I am glad that I have been given an opportunity to serve as the Director of National Institute of Technology
+          (NIT) Warangal-the oldest one in the bracket of first 17 NITs. It is an honour and privilege for me to lead
+          this prestigious institute which has a rich history of its distinction in teaching, research and service to
+          the nation. It is the first regional engineering college whose foundation stone has been laid by the former
+          prime minister, Pandit Jawaharlal Nehru in the year 1959. Over a period of more than six decades, NIT Warangal
+          has emerged as one of the leading institutions in engineering and technology. Warangal is the second largest
+          city of the state of Telangana, Hyderabad being the first one which has several places of interest to visit.
+          Some of the cultural heritages worth seeing in Warangal are Ramappa Temple, Bhadrakali Temple and thousand
+          pillar temple. NIT Warangal is poised to create an ambience for nurturing innovation, incubation, creativity
+          and excellence within its faculty and students towards achieving the sustainable development goals. We
+          emphasize on student centric education with interdisciplinary research and development for the benefit of
+          Industry and Society.NIT Warangal becomes a preferred institution for top rankers in Joint Entrance
+          Examination (Main) because of its excellent teaching learning process, infrastructure that a student needs for
+          effective learning. Our alumni have received distinguished recognitions in their chosen areas of profession
+          and extend support towards sustainable development of the institute. I invite participation of all the
+          stakeholders in the growth plan of the institute to steer it to the next level of success in all fronts.
+        </p>
+      </div>
+
+      <!-- right side -->
+      <div class="right">
+        <img src="nirf_image_2025-11-12-15-56-41.jpg" class="nif-logo">
+        <div class="tabs">
+          <button>Vision</button>
+          <button>Mission</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

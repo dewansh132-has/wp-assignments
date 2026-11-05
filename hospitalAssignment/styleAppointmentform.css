@@ -1,0 +1,23 @@
+body{
+    font-family: cursive;
+    background: linear-gradient(to right,rgb(110, 242, 242),rgb(106, 106, 248));
+}
+form{
+    margin: auto; /*form comes in the middle of the page*/
+    width: 40%;
+    border: 3px solid rgb(75, 93, 230);
+    padding: 30px;   
+}
+table{
+    margin: auto;
+    width: 100%;
+    /* padding: 10px; */
+}
+.one{
+    background-color: rgb(86, 241, 252);
+    margin:15px;
+}
+.buttons:hover{
+    background-color: blueviolet;
+    color: white;
+}

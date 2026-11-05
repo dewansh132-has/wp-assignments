@@ -1,0 +1,40 @@
+.card{
+    position:relative; /*use to position the card as per wish*/
+    max-width:600px;
+    display:inline-block; /*fit the card to the content*/
+    border-radius:10px;
+    background: linear-gradient(to bottom,rgb(154, 244, 244),rgb(140, 140, 248));
+    padding:10px;
+    box-shadow:0 4px 30px rgba(237, 46, 46, 0.5);
+}
+.card:hover{
+    transform:translateY(-15px);
+    transition:0.5s;
+}
+.card img{
+    float:left;
+    margin: 5px 20px 5px 5px;
+    width:300px;
+    height:200px;
+    border-radius: 10px;
+}
+.card img:hover{
+    transform: translateX(-5px);
+    transition:0.5s;
+}
+.card h1:hover{
+    color:red;
+    transition:0.5s;
+}
+.card p{
+    font-size: 35px;
+}
+.card button{
+    font-size: 25px;
+    background: rgb(106, 235, 106);
+    color:black;
+    cursor:pointer;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border:none;
+}

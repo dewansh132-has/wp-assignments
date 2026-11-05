@@ -1,0 +1,28 @@
+.card{
+    display:inline-block;
+    background: linear-gradient(to right,rgb(155, 249, 249),rgb(127, 127, 247));
+    box-shadow: 10px 10px 10px 0px rgb(115, 145, 252); /*right down blur-radius spread radius*/
+    border-radius: 10px;
+    padding: 10px; /*gap inside*/
+    margin:5px; /*gap outside*/
+}
+.leg{
+    background-color: rgb(125, 125, 254);
+    font-size:25px;
+    border-radius: 5px;
+    padding:5px;
+}
+.btn{
+    margin-left: 15px;
+}
+.btn:hover{
+    background-color:rgb(130, 251, 130);
+    border-color: rgb(130, 251, 130);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+.error{
+    color:red;
+    font-size: 15px;
+    font-family: cursive;
+}

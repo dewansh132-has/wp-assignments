@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Marks Tracker</title>
+</head>
+
+<body>
+    <h1>Student Marks Tracker</h1>
+    <h3>Add / Manage Students</h3>
+    <input id="name" placeholder="Student Name">
+    <input id="roll" placeholder="Roll Number">
+    <input id="score" type="number" placeholder="Score 0-100"><br>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="sortHigh()">Sort High to Low</button>
+    <button onclick="sortLow()">Sort Low to High</button>
+    <button onclick="showFail()">Show Failing Only</button>
+    <button onclick="showAll()">Show All</button>
+    <button onclick="clearAll()">Clear All</button>
+    <p>Total Students: <span id="total">0</span></p>
+    <p>Average Score: <span id="avg">0</span></p>
+    <p>Pass % (≥60): <span id="pass">0</span>%</p>
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Roll</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Result</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

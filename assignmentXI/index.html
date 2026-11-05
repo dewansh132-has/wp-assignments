@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+    <div class="card">
+            <fieldset>
+                <legend class="leg">Student's Info</legend><br>
+                Name: <input id="name" placeholder="Student's Name"><br>
+                <span class="error" id="nameErr"></span><br>
+                Roll No: <input id="roll" placeholder="Student's Roll No."><br>
+                <span class="error" id="rollErr"></span><br>
+                Email No: <input id="email" placeholder="Student's Email"><br>
+                <span class="error" id="emailErr"></span><br>
+                Course: <input id="course" placeholder="Course"><br>
+                <span class="error" id="courseErr"></span><br>
+                Marks: <input type="number" id="marks" placeholder="Marks obtained"><br>
+                <span class="error" id="marksErr"></span><br>
+                <button class="btn">Reset</button>
+                <button class="btn" onclick="addStudent()">Submit</button>
+            </fieldset>
+        </div>
+        <br><br><hr><br>
+        <input id="search1" placeholder="Search by Name or Roll"><button onclick="search()">Search</button><br><br>
+        <table align="center" border="2px">
+            <thead>
+                <th>S.N.</th>
+                <th>Student's Name</th>
+                <th>Roll No.</th>
+                <th>Email ID</th>
+                <th>Course</th>
+                <th>Marks obtained</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+<script src="script.js"></script>
+</body>
+</html>

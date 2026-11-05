@@ -1,0 +1,32 @@
+body {
+  background: #111;
+}
+
+.slider {
+  width: 900px;
+  overflow: hidden;
+  position: absolute;
+  top:600px;
+  left:1000px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(600px * 8);
+  animation: scroll 10s linear infinite;
+}
+
+.slide img{
+  width: 100%;
+}
+
+/* animation for infinite scroll left */
+@keyframes scroll {
+  0% {transform:translateX(0);}
+  50% {transform:translateX(-1200px);}
+  100% {transform: translateX(calc(-2400px));}
+}
+
+.slider:hover .slide-track{
+  animation-play-state: paused; /*pauses the animation*/
+}
